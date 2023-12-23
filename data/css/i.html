@@ -1,0 +1,969 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>smaple</title>  <!-- defulat  scropts-->
+  <script src="https://js.srvar.me/console.js"></script>
+  <link href="https://css.srvar.me/fonts/font.css" rel="stylesheet">
+  <link href="https://css.srvar.me/s.css" rel="stylesheet">
+ <script src="https://js.srvar.me/ssall.js"></script>       
+<script src="https://js.srvar.me/http2.js"></script>    
+ <script src="https://js.srvar.me/theme.js"></script>       
+  <script src="https://js.srvar.me/bootstarp.js"></script> 
+  
+
+
+
+
+<!--<link href="https://css.srvar.me/header.css" rel="stylesheet"> -->
+<style>
+    .toll_bar  { position:fixed; top:0;left:0; right:0; height:35px; 
+      background:rgba(240, 240, 247, 0.70);    width:auto;  display: flex;
+      border-bottom: solid 2px pink;
+ }
+
+.theme_dark  {
+    background:rgba(31, 31, 31, 1);  color:white;
+}
+
+.theme_dark svg {
+    fill:pink
+}
+.theme_dark .theme_text {
+    color:white;
+}
+
+
+.theme_dark  .theme_self{
+      fill:white
+  }
+ .toll_bar button {
+       width:auto;     padding:0;margin:0; margin-left:30px;  border:none; 
+       background:none;  margin-top:7px;  margin-bottom:0; display: flex;
+ }
+ .toll_bar button svg {
+     height:17px; width:17px; 
+ }
+ .toll_bar .Logo svg {
+     width:20px; height:20px; 
+ }
+.toll_bar button:hover {
+     border-bottom:solid 1px rgba(255, 31, 244, 1);
+}
+.toll_bar  .Layout { 
+    background:none;   width:auto;  padding: 1px 8px 2px 8px;
+    column-gap: 10px;  border-right:solid 1px gray;  border-left:solid  1px gray;
+ }
+ .toll_bar .addon {
+     background:none;   width:auto;  padding: 1px 8px 1px 8px;
+     column-gap: 10px;   border-right:solid 1px gray;  border-left:solid  1px gray;
+ }
+ 
+ .toll_bar .Logo:hover {
+     border:none;
+ }
+ 
+.toll_bar  .Layout svg{
+   border-bottom:solid 1px rgba(255, 31, 244, 0);
+}
+
+.toll_bar  .addon svg{
+    display: block; 
+   border-bottom:solid 1px rgba(255, 31, 244, 0); padding-bottom:0;
+}
+.toll_bar  .Layout svg:hover {
+    border-bottom:solid 1px rgba(255, 31, 244, 1);
+}
+
+.toll_bar  .addon svg:hover {
+    border-bottom:solid 1px rgba(255, 31, 244, 1);
+}
+.toll_bar  .Layout:hover{
+  border-bottom: none;
+} 
+
+.toll_bar  .addon:hover{
+  border-bottom: none;
+} 
+.toll_bar  .Layout svg {margin-top:auto}
+
+ 
+ 
+.theme_dark  {
+    background:rgba(31, 31, 31, 1);  color:white;
+}
+.theme_dark .list {
+  background:rgba(15, 15, 15, 1);  box-shadow: 1px 2px 10px 2px rgba(66, 66, 66, 1)
+} 
+
+.theme_dark .svg {
+    fill:pink
+}
+.theme_dark .svgpink {
+    fill:white;
+}
+.theme_dark  .Layout .liveend_svg {
+    fill:green;
+} 
+.theme_dark  .Layout  .LIVE_SEC .ch {fill:pink }
+</style>
+<style>
+ 
+.card_user {  background:rgba(240, 240, 247, 0.70); position: fixed; top:32px; bottom:0; left:0; right:0;
+    overflow-y: auto;
+      
+ }   
+
+
+.card_user .model  {  height:auto;    
+ overflow:hidden;
+  overflow-y:auto;  
+   padding-bottom:20px;
+   /*box-shadow: 0 2px 10px;*/
+   background:white;
+  margin-left:10%;
+   margin-right:10%;
+   margin-top:10%;
+   max-height:80%;
+   border-radius: 5px;
+    border-left:solid 2px pink;  border-right:solid 2px pink;
+    
+}
+
+@media screen and  (max-width: 700px){  /*mobile*/
+    .card_user .model {
+       margin-top:30px;
+         margin-left:3%;
+   margin-right:3%;
+   overflow:hidden;
+   max-height:100%;
+    box-shadow: 0 0 2px 1px pink;
+    padding:0;
+    padding-bottom: 20px;
+   
+    }
+   
+}
+
+
+@media screen and  (min-width: 900px){  /*dekstop*/
+    .card_user .model { 
+      margin-left:30%;
+   margin-right:30%;
+  
+}
+}
+
+
+
+@media screen and  (min-width: 1300px){  /*dekstop*/
+    .card_user .model { 
+      margin-left:35%;
+   margin-right:35%;
+  
+}
+   
+}
+
+@media screen and  (min-width: 25000px){  /*dekstop*/
+    .card_user .model { 
+      margin-left:45%;
+   margin-right:45%;
+  
+}
+   
+}
+ .card_user .model  a {
+      color: rgba(255, 31, 244, 1); font-weight:400 ; font-family: "Gill Sans", sans-serif;
+    text-decoration:none;
+ }
+ .card_user .model   a:hover {
+  color:gray;
+  text-decoration-line: underline;
+} 
+.card_user .model  .close {
+    background:white; text-align:right; padding-top:5px;
+ }
+ .card_user .model  .close svg {
+     margin-right:5%;
+ }
+.card_user .model  .close svg:hover{
+     background:pink;
+     
+}
+.card_user .model  h4 { 
+      text-align:center;  padding-top:10px;  font-family: "Gill Sans", sans-serif;
+      background:white; margin:0; margin-bottom: 7px; 
+} 
+
+.card_user .model  .form {
+    margin-left:5%;  
+} 
+
+.card_user .model  .form input { 
+  border:none;border-bottom:solid 1px gray;   width:70%; 
+  border-radius: 5px;
+  border-left:solid 1px pink;  font-family: 'Roboto', sans-serif; font-size:17px;
+  color:rgba(38, 38, 38, 1);   outline:none; 
+    
+} 
+.card_user .model  .form dt {
+     padding:10px 0 5px 0; color:black; width: 70%;
+}
+.card_user .model  .h_pass {
+    border-right:solid 2px gray;
+}
+.card_user .model   .Login_action {
+    text-align: center;  width:70%;
+    border-bottom: solid; padding-bottom: 10px;;
+}
+ 
+.card_user .model   .Login_action button {
+    border:none; border-radius: 5px; width:auto;  width: 80px; box-shadow: 0px 2px 10px 2px rgba(87, 86, 88, 0.40);
+    background:rgba(232, 232, 232, 0.49);color:black; font-size:16px; font-weight:500; height:25px; border:solid 1px ;
+      
+}
+.card_user .model   .Login_action button:hover{
+    border:none;
+}
+.card_user .model  .other_action {
+    margin-top:20px;  display: flex; column-gap: 7px; font-family: "Gill Sans", sans-serif; 
+    width:70%; font-size:15px;
+   
+    padding:5px;  background:rgba(232, 232, 232, 0.49);   
+      
+}
+.card_user .model  .other_action a {
+     
+    margin:auto;  text-decoration: none;
+    
+}
+.card_user .model  .wating {
+   margin-left:5%; color:green; font-size:17px; margin-top:10px; width:70%; text-align: center; padding-top:5px;
+}
+.card_user .model  .status_mini {
+    font-size:14px;
+}
+.card_user .model  .status_mini,.status{
+    width:70%;
+}
+
+.card_user .model  .form .trems {
+    color:black; font-family: "Gill Sans", sans-serif; font-size:12px; margin-top:15px; margin-bottom: 10px;
+     background:rgba(232, 232, 232, 0.49); text-align: center; border-top:solid 1px; 
+}
+
+
+/*select elemtns*/
+
+
+.card_user .fild_a {
+    margin-top:10px; background:none;
+}
+.card_user div.fild_a .options dt {
+    width:100%;
+}
+.card_user div.fild_a  .select_costum  dt {
+    background:none; width:auto; margin:auto;
+}
+
+/*select elemtns*/
+@media screen and  (max-width: 700px){ /*mobile*/
+   .card_user .model  .form input {
+      width:90%;
+  }
+  .card_user .model  .form dt {
+      width: 90%;
+  }
+ .card_user .model  .status_mini,.status{
+    width:90%;
+} 
+.card_user .model  .wating{
+    width: 90%;
+}
+.card_user .model  .other_action{
+    width: 90%;
+}
+.card_user .model   .Login_action{
+    width:90%;
+}
+
+}
+
+.card_user.theme_dark {
+   background:rgba(31, 31, 31, 1);  
+}
+.card_user.theme_dark .model {
+   background:rgba(51, 51, 51, 1);  color:white;
+}
+.card_user.theme_dark .model h4 {background:rgba(51, 51, 51, 1)}
+
+.card_user.theme_dark .model  .form input {
+    background:rgba(31, 31, 31, 1); color:white;
+}
+.card_user.theme_dark .model .form .pass_show svg path {fill:white}
+
+.card_user.theme_dark .model .form .status_mini  {background:rgba(31, 31, 31, 1); color:white}
+.card_user.theme_dark .model .form  .Login_action button {
+   background:rgba(31, 31, 31, 1); color:white;  box-shadow: 0px 1px 4px 1px rgba(252, 252, 252, 0.65)
+}
+.card_user.theme_dark .model .form  .other_action {background:rgba(31, 31, 31, 1)}
+
+</style>
+
+<link href="https://css.srvar.me/bootstarp.css" rel="stylesheet"> 
+   </head>
+  
+   
+    <body>
+  
+  
+  
+
+ <nav class='toll_bar  theme_background'>
+   
+       <button class="Logo text_theme theme_text ">  
+       <svg
+   viewBox="0 0 48 48"
+   version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg" width="30px" height="30px" fill='rgba(255, 31, 244, 1)'>
+  
+  <path
+     d="m 39.347559,17.287714 h -0.944785 c -0.0037,-0.179524 -0.0075,-0.359046 -0.0075,-0.53238 0,-8.412841 -3.533642,-16.89996819 -11.426687,-16.89996819 -5.05869,0 -9.013915,4.56352869 -9.528254,5.13960599 l -3.89057,4.5335636 c -0.386842,1.2999966 2.833885,0.2421443 3.39555,1.1769046 0.621178,1.039997 1.625475,1.773752 2.391719,0.814226 0.290128,-0.359042 4.440118,-3.7405055 6.679331,-3.7405055 5.787736,0 6.680447,9.8180765 6.687886,15.7485415 -0.126468,1.789042 0.327327,3.924754 1.324186,4.562371 0.877831,0.674761 1.670111,0.01236 1.897009,-0.179524 1.000579,-0.736665 1.833774,-1.114283 2.46983,-1.114283 1.554804,0 3.808896,1.850949 3.808896,4.754277 0,3.807136 -0.647214,6.339036 -3.808896,6.339036 H 37.44305 c -1.458091,0 -3.024054,-2.575234 -4.277568,-4.642849 -0.275264,-0.451905 -0.535638,-0.879047 -0.784853,-1.269045 -0.606299,-0.947142 -1.662673,-3.064279 -2.78228,-5.305229 -1.606878,-3.206658 -3.422054,-6.846651 -4.85039,-8.982363 -4.113906,-6.14713 -7.521081,-8.3261741 -13.014968,-8.3261741 -4.9396605,0 -9.2209493,5.2123711 -10.91337787,13.2847371 l -0.0892696,0.482856 c -0.18970064,1.039997 -0.42403711,2.333804 -0.42403711,5.249512 0,6.574275 2.38799938,19.017108 11.42668558,19.017108 8.309643,0 12.044147,-7.799985 12.081342,-7.880462 l 0.06324,-0.154766 c 0.758804,-2.092379 0.08184,-3.466661 -0.141345,-3.838089 -0.331047,-0.557143 -0.799718,-0.848094 -1.264672,-0.798571 -0.446355,0.04332 -0.877832,0.38381 -1.223756,0.959523 -0.178546,0.290958 -0.316173,0.520005 -0.576547,0.817148 -1.37254,1.776662 -4.582578,2.971422 -7.986035,2.971422 -4.6532495,0 -6.6655662,-7.348081 -6.6655662,-11.093313 0,-3.534755 1.2051585,-9.508552 5.7133422,-9.508552 5.843533,0 8.570639,5.111137 9.545181,6.955895 0.662094,1.219521 1.546742,2.825038 2.201396,3.976465 1.153082,2.01809 2.239213,3.918564 3.317904,6.116179 1.68127,3.293327 3.381139,6.431892 5.672428,8.586174 1.978841,1.919044 3.972559,2.890947 5.925362,2.890947 6.141101,0 9.522239,-5.571418 9.522239,-15.692828 0,-7.273795 -4.244092,-14.41759 -8.570015,-14.41759 z"
+     />
+</svg>
+        </button>     
+      <button class="main">   <!--menu -->
+      <svg xmlns="http://www.w3.org/2000/svg"  class="theme_svg" viewBox="0 0 448 512"><path d="M439 48H7a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h432a8 8 0 0 0 8-8V56a8 8 0 0 0-8-8zm0 384H7a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h432a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8zm0-128H7a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h432a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8zm0-128H7a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h432a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8z"/></svg>     
+     
+      </button>  
+     
+      
+      
+
+
+<button  class="Layout theme_hig"> <!-- layout mix  menu-->
+ 
+ <dt t="light"   theme="mode" > <!--them mode-->
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display:block;margin-top:auto">
+  <path d="M12 3A9 9 0 1 0 12 21A9 9 0 1 0 12 3Z"  fill="pink"  />
+  <path d="M12,22C6.5,22,2,17.5,2,12C2,6.5,6.5,2,12,2c5.5,0,10,4.5,10,10C22,17.5,17.5,22,12,22z M12,4c-4.4,0-8,3.6-8,8s3.6,8,8,8 s8-3.6,8-8S16.4,4,12,4z" class="theme_self" />
+  <path d="M12,21c-5,0-9-4-9-9s4-9,9-9V21z" fill="black" class="theme_self"/>
+</svg>  
+      </dt>
+ 
+
+ 
+ 
+  
+ 
+ 
+    </button> 
+     <!-- /LIVESECTION End -->
+  
+
+</nav>   
+  
+  <div class="REQUEST_URL" url="<?php echo $_GET['url']; ?>"></div>
+  
+   <main class="card_user theme_background" style="display:noned">
+      
+  <menu class="model">
+     
+   <h4>Login</h4>
+    
+    <div class="form">
+      <dt check="email" class='title'>Email | User</dt>
+      <input   attr="email"  class="singUP" cheking='false'>
+       <dt class="status_mini" style="color:red; display:none"> </dt>  
+      <!--forgot form-->
+      <div class="forget" style="display:none">
+        <dt class='title'>User Name</dt>
+      <input   attr="nameL">
+      </div>
+      <!--/forgot form-->
+      
+       <!-- singuP--> 
+      <div class="sinpup" style="display:none">
+        <dt class='title'>User Name</dt>
+      <input   attr="user" class="singUP">
+       <dt class="status_mini" style="color:red; display:none"> </dt>
+      </div>
+        <!-- /singuP-->
+      
+      <dt class="right_border title"   check="pass">Password</dt>
+      <input   attr="pass"   type="password" class="singUP"> 
+      <span class="pass_show" type="hide">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="17px" height="17px">
+  <path d="M12 4C4 4 1 12 1 12C1 12 4 20 12 20C20 20 23 12 23 12C23 12 20 4 12 4 z M 12 6C17.276 6 19.944594 10.267094 20.808594 11.996094C19.943594 13.713094 17.255 18 12 18C6.724 18 4.0554062 13.732906 3.1914062 12.003906C4.0574062 10.286906 6.745 6 12 6 z M 12 8C9.791 8 8 9.791 8 12C8 14.209 9.791 16 12 16C14.209 16 16 14.209 16 12C16 9.791 14.209 8 12 8 z M 12 10C13.105 10 14 10.895 14 12C14 13.105 13.105 14 12 14C10.895 14 10 13.105 10 12C10 10.895 10.895 10 12 10 z" fill="#5B5B5B" />
+</svg>
+</span>
+  <span class="pass_show" style="display:none;" type="show">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="17px" height="17px">
+  <path d="M3.7070312 2.2929688L2.2929688 3.7070312L5.0683594 6.4824219C4.5292489 6.9219094 4.0485609 7.3900086 3.6191406 7.859375C1.7891406 9.899375 1 12 1 12C1 12 4 20 12 20C13.2 20 14.289531 19.819766 15.269531 19.509766C15.988638 19.290038 16.648642 19.001564 17.248047 18.662109L20.292969 21.707031L21.707031 20.292969L3.7070312 2.2929688 z M 12 4C10.8 4 9.7104688 4.1802344 8.7304688 4.4902344L10.390625 6.1503906C10.890625 6.0503906 11.43 6 12 6C17.28 6 19.940547 10.27 20.810547 12C20.480547 12.66 19.870938 13.700703 18.960938 14.720703L20.380859 16.140625C22.210859 14.100625 23 12 23 12C23 12 20 4 12 4 z M 6.4882812 7.9023438L8.5585938 9.9726562C8.1994484 10.572128 8 11.260931 8 12C8 12.08 7.9997656 12.17 8.0097656 12.25C8.1297656 14.26 9.74 15.870234 11.75 15.990234C11.83 16.000234 11.92 16 12 16C12.739069 16 13.427872 15.800552 14.027344 15.441406L15.757812 17.171875C15.108399 17.481358 14.388478 17.719759 13.609375 17.849609C13.099375 17.949609 12.57 18 12 18C6.72 18 4.0594531 13.73 3.1894531 12C3.5194531 11.34 4.1190625 10.299297 5.0390625 9.2792969C5.4485147 8.8099248 5.9391762 8.3418359 6.4882812 7.9023438 z M 12.25 8.0097656L15.990234 11.75C15.870234 9.74 14.26 8.1297656 12.25 8.0097656 z M 10.070312 11.484375L12.515625 13.929688C12.356514 13.978879 12.178671 14 12 14C10.9 14 10 13.1 10 12C10 11.821329 10.021121 11.643486 10.070312 11.484375 z" fill="#5B5B5B" />
+</svg>
+  </span>
+  <dt class="status_mini" style="color:red; display:none"> </dt>
+     
+    
+ <!-- singuP-->   
+    <div class="sinpup" style="display:none">
+      <dt class="right_border title" check="pass">Confirm Pass</dt>
+      <input   attr="pass" class="singUP"  type="password">
+      <dt class="status_mini" style="color:red; display:none"> </dt>
+        <dt class="right_border title" check="pass">Counry Resgion</dt>
+      
+      
+      <!--select bootstarp-->
+      <div class="fild_a theme_background country" width="70%" height="25px">
+         
+         <div class='options'>
+            
+            
+            <dt value="dddkkkkk"  selected>India</dt> 
+               <dt value="ccc">India</dt>  
+                <dt value="ddd" >kota</dt>
+                  <dt value="ddd" >koli</dt> 
+                   <dt value="ddd" >kboy</dt>  
+         </div>
+         
+          <!--select bootstarp-->
+          
+          
+   </div> <!--select-->
+   
+   
+       <dt class="right_border title" check="pass">Session PIN</dt>
+      <input   attr="spin" class="singUP"  type="password">
+      <dt class="status_mini" style="color:red; display:none"> </dt>
+       <dt class='title'>Full Name</dt>
+      <input   attr="name" class="singUP"> 
+      <dt class="status_mini" style="color:red; display:none"> </dt>
+       
+       
+       
+      </div>
+       
+       <!-- /singuP--> 
+
+<dt class="status_mini trems" style="display:none">
+    Yes i agree i have  read the  <a href="/trems">terms</a> and  <a href="conditions">conditions</a> and  <a href="cookies"> cookies</a>
+     
+    
+</dt>     
+  
+ <dt class="status" style="color:red; display:none"></dt>  
+ 
+  
+  
+  
+  <div class="Login_action" type='login'>
+  <dt class="action_login" type='login'>
+    <button> Login</button>
+  </dt>
+  <dt class="action_regester" type='up' style="display:none">
+    <button> Register</button>
+  </dt>
+  <dt class="action_forget" type='forgot' style="display:none">
+    <button> Reset</button>
+    
+  </dt>
+  
+  </div>
+  
+   
+  
+   <div class="other_action">
+      <a  type='up' href="javascript:void"> New Register </a> 
+        <a  type='forgot'  href="javascript:void" style="display:inline-block"> forgot password </a> 
+       <a  type='login'  href="javascript:void"   style="display:none"> Login </a> 
+       <a    href="/help" > Help </a> 
+   </div>  
+</div>   
+       <div class='wating' style="display:none">
+          <dt style='color:red'>Progressing>>></dt>
+          
+          
+       </div> 
+  
+  </menu>
+  
+  </main>
+
+
+
+
+
+
+
+<script>
+ 
+ record() /*bosotstart call back*/
+   
+  
+ 
+var r_url = ss('.REQUEST_URL').getAttribute("url"); 
+     
+     var card_user = ss('.card_user')  
+ 
+
+      mode_card('up',"LOGIN <a href=''>?</a>")
+
+
+card_user.querySelector('.model') .onscroll = function(){
+   card_user.querySelector('.close').style.cssText = `transform: translate(0, ${this.scrollTop}px)`;
+   card_user.querySelector('h4').style.cssText = `transform: translate(0, ${this.scrollTop}px)`;
+}
+ function card_wating_animate()  {
+     
+     card_user.querySelector(".wating").style.display = "inline-block"
+   setInterval(function(){
+     var animate=  card_user.querySelector(".wating"); 
+       if(animate.textContent === "Progressing>>>"){
+         animate.innerHTML = "<dt style='color:blue'>Facting...</dt>"  
+       }else if (animate.textContent === "Facting..."){
+           animate.innerHTML = "<dt style='color:green'>Data..</dt>"  
+       } else if (animate.textContent === "Data.."){ 
+            animate.innerHTML = "<dt style='color:red'>Progressing>>></dt>" 
+       }else {
+           animate.innerHTML = "<dt style='color:red'>Progressing>>></dt>"  
+       }
+     },600) 
+ }
+
+ 
+
+function status_card_animate(prop)  {
+      card_user.querySelector(".wating").style.display = prop;
+}
+
+function status_card(prop,text = null){
+       card_user.querySelector('.status').style.display  = prop;
+       card_user.querySelector('.status').innerHTML = text;
+}
+
+
+function checking_card (el){
+        el.onfocus()
+        card_user.querySelector('[check'+'='+el.getAttribute('attr')+']').style.color = "red"
+       el.oninput = function (){ card_user.querySelector('[check'+'='+el.getAttribute('attr')+']').style.color = "gray";
+           status_card("none")
+       }
+}
+
+function status_ok (button,text= null){
+      button.style.display = "inline-block"; 
+             status_card_animate("none");
+             card_user.querySelector('.other_action').style.display = "flex";
+             status_card('block',text);
+}
+
+ function card_minStaus(display,text,index){
+     card_user.querySelectorAll('.status_mini').forEach(function(status,index2){
+           if(display == true){
+             status.style.display =  'none' ; 
+           }
+           else  if(index2 == index) {
+               status.style.display = display;
+               status.textContent = null;
+               status.textContent = text;
+           }
+           
+     });
+     
+   
+ }
+
+
+ 
+ 
+ function card_borderStatus(self,ok){
+      if(ok){
+           self.style.cssText += "border-left-color:rgba(255, 31, 244, 1);;border-left-width:3px"
+      }else {
+        self.style.cssText += "border-left-color:red;border-left-width:3px"  
+      }
+ }
+var  enable_disbled_eUCheking = false;
+   
+ 
+function mode_card(type,title,notin) {
+          card_user.querySelector('h4').innerHTML = title;
+          status_card('none',null);
+        
+      card_user.querySelector(".other_action").querySelectorAll('a').forEach(function(display){
+          if(display.getAttribute('type') == type){
+             display.style.display = "none"; 
+          }else { 
+            display.style.display = "inline-block";  
+          }
+      }); 
+      card_user.querySelector(".Login_action").querySelectorAll('dt').forEach(function(button){
+        if(button.getAttribute('type') == type) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none"
+        }
+      });
+    card_user.querySelectorAll('input').forEach(function(v){ v.value = null;
+        v.style.cssText +="border-left-color:gray;border-left-width:1px";
+    });
+    card_user.querySelectorAll('.title').forEach(function(title){ title.style.color = "gray"});
+    
+   card_user.querySelectorAll('input').forEach(function(a){
+     a.addEventListener('input',function(as){
+         status_card('none');
+     })
+ });
+    if(type =='up'){ //regester
+    
+      
+        enable_disbled_eUCheking = true; 
+     card_user.querySelectorAll(".sinpup").forEach(function(self){self.style.display = "block";});
+     card_user.querySelectorAll(".forget").forEach(function(self){self.style.display = "none";});
+      var email  = card_user.querySelector('[check="email"]');
+          email.textContent = 'Email';
+          card_minStaus()
+           enable_disbled_eUCheking =true;
+          card_user.querySelector('.trems').style.display = "block";
+        var email_ok  = false,user_ok = false,pass_ok = false,password_ok = false,s_pin = false,full_name = false;
+        var location = card_user.querySelector('.country').value
+         card_user.querySelector('.country').change(function(){
+            location = this.value
+         });
+    //check email
+     card_user.querySelector('[attr="email"]').oninput = function (){
+       
+    
+           let v = this.value,self = this;
+           card_minStaus('none',null,0);
+            email_ok = true;
+           
+            if((v.includes('@')) && (v.replaceAll(/\s/g,"").length > 6) && (v.includes('.')) && !(v.match(/(^\s*\w+(\.\w+)*)@(\w+)(\.)\w+(\.\w+)*(\s)*$/g) == null ) && (v.replaceAll(/\s/g,"").length < 199)){
+               card_borderStatus(self,true)
+             http2.get('/@ATTR_REQUEST@',{type:"check_email",email:v.toLowerCase()},"json")
+             .done(function(is){ 
+                 if(is.status  == 300){ //areradey
+                     card_borderStatus(self,false)
+                   card_minStaus('block',"! This email is  already used",0);
+                    email_ok = false;
+                    }else if(is.status  == 200){ 
+                     
+                    card_borderStatus(self,true)
+                     email_ok = true; 
+                 }
+             })
+            }else {
+                 card_borderStatus(self,false);
+                   card_minStaus('block',"! This email is invalid.",0);
+                    email_ok = false;
+            
+       } 
+          
+           
+        } //end check_email
+        
+        
+      //check user name
+       var  max_length = "";
+        card_user.querySelector('[attr="user"]').oninput = function () {
+           
+          
+              let v = this.value,self = this;
+              
+               card_minStaus('none',null,1);
+               
+               
+                if((v.length >= 4) && !(v.match(/^\s*(\w+)\s*$/g) == null )){
+                    card_borderStatus(self,true)
+                    user_ok = true;
+                    if(v.length <= 16){
+                      max_length = v;
+                    }
+                    this.value = max_length;
+                   var  u_name = v.replaceAll(/\s/g,""); 
+                    http2.get('/@ATTR_REQUEST@',{type:"check_user",user:u_name.toLowerCase()},"json")
+                    .done(function(is){ 
+                        if(is.status  == 300){ //areradey
+                    card_borderStatus(self,false)
+                    card_minStaus('block',"It already exists",1);
+                    user_ok = false;
+                   }else if(is.status  == 200){ 
+                     card_borderStatus(self,true)
+                     user_ok = true;
+                     }
+                    });
+                    
+                }else { 
+                     card_minStaus('block'," Ony allow W OR character should be 4 or  more  than  4 do not  use these  [!@#$%^&*()+={}[]\|] more.. symboles OR  Not \w white space  \w ",1);
+                      card_borderStatus(self,false)
+                      user_ok = false;
+                }
+            
+         } //end  check_user 
+         
+      //check password
+        let carefull = false;
+        var pass_element = card_user.querySelectorAll('[attr="pass"]');
+         pass_element[0].oninput = function (){
+              
+                 var v = this.value,self = this;
+                 if(carefull){
+                     card_borderStatus(pass_element[1],false)
+                      card_minStaus("block","This  password does not  match  the  first password",3);
+                      password_ok = false;
+                      pass_element[1].value = null;
+                 }
+                 if(!(v.match(/^([^\s]+)$/g) == null) && (v.replaceAll(/\s/g,"").length >= 8) && (v.replaceAll(/\s/g,"").length < 17)){
+                     card_borderStatus(self,true)
+                     card_minStaus('none',null,2) 
+                     pass_ok = true;
+                 }else {
+                      card_minStaus('block',"Minimum  length  can be  8 or  more than 16, |there should  not  be  much whitespace in between",2);
+                      card_borderStatus(self,false);
+                      pass_ok = false;
+                 }
+              
+          } //
+       pass_element[1].oninput = function (){
+             
+                  carefull = true;
+                 var v = this.value,self = this;
+                  if((v === pass_element[0].value) && ( pass_ok == true)){
+                        card_borderStatus(self,true)
+                        card_minStaus("none",null,3)
+                        password_ok = true;
+                  }else {
+                        card_borderStatus(self,false)
+                        card_minStaus("block","This  password does not  match  the  first password",3)
+                         password_ok = false;
+                  }
+              
+          } // end  check password
+
+ //check Session pin
+   mx_lenft_pin = ""
+   card_user.querySelector('[attr="spin"]').oninput = function(){
+         v = this.value
+              if(v.length <= 8){
+                       mx_lenft_pin = v;
+                    }
+                this.value =  mx_lenft_pin;
+          if(!(this.value.match(/^([0-9]+)$/g) == null) && this.value.length >= 6 &&  this.value.length < 9){
+             card_borderStatus(this,true)
+             card_minStaus("none",null,4)
+             s_pin = true
+            
+          }else{
+               card_borderStatus(this,false)
+               s_pin = false
+               card_minStaus("block","min_length = 6 and  only number morthan 8",4)
+          }
+         
+        
+         
+       
+       
+   }
+   
+     // check full name    
+     card_user.querySelector('[attr="name"]') .oninput = function ()  {
+         
+              var v = this.value,self = this;
+             
+              if((v.replaceAll(/\s/g,"").length >= 4) &&  (v.length < 61)){
+                   card_borderStatus(self,true); 
+                   full_name = true;
+                    card_minStaus("none",null,5)
+              }else {
+                   card_borderStatus(self,false)
+                  full_name = false;
+                  card_minStaus("block"," The  name is invalid.",5)
+              }
+          
+     } // end check full name
+     
+      //click 
+       card_user.querySelector('[type="up"]').onclick = function(){
+            let all_ok = [email_ok,user_ok,pass_ok,password_ok,s_pin,full_name];
+            let self = this;
+          if(!(all_ok.includes(false))){
+           var _E =  card_user.querySelector('[attr="email"]'),U_  =  card_user.querySelector('[attr="user"]'),
+           _P =  pass_element[1], N_ =  card_user.querySelector('[attr="name"]'),S_p = card_user.querySelector('[attr="spin"]');
+           http2.get('/@ATTR_REQUEST@',{type:"register_new",user:U_.value,email:_E.value,pass:_P.value,name:N_.value,session_pin:S_p.value,country:location},"json")
+           .wait(function(){ 
+          card_wating_animate();    
+          self.style.display = "none"  
+         card_user.querySelector('.other_action').style.display = "none";
+          status_card("none");
+          card_user.querySelector('.trems').style.display = "none";
+           })  
+           .done(function(req){
+              if(req.status == 200){  
+                  document.console =req.pin
+                  document.console = req.con
+                 //window.location.replace(r_url) 
+              }else if(req.status == 300){
+                 status_ok(self,"Something went  wrong  check the  input  you  entered | or  try  again  |or  the  help page  pops up")
+              }
+           })
+          }else {
+              all_ok.forEach(function(isn,key){
+                  
+                  if(isn == false){
+                  card_borderStatus(card_user.querySelectorAll('.singUP')[key],false)
+                  card_user.querySelectorAll('.singUP')[key].focus()
+             
+                  }
+              })
+          }
+       } //end  click
+      
+       
+  
+    }else if(type == 'login'){ 
+        card_user.querySelectorAll(".forget").forEach(function(self){self.style.display = "none";});
+        card_user.querySelectorAll(".sinpup").forEach(function(self){self.style.display = "none";});
+        card_user.querySelector('[check="email"]').textContent = 'Email | User';
+         enable_disbled_eUCheking = false;
+          card_minStaus(true)
+          
+    card_user.querySelector('[type="login"]').onclick = function (){
+               self = this;
+               
+                var email  = card_user.querySelector('[ attr="email"]');
+    
+              var pass   = card_user.querySelector('[ attr="pass"]');
+              var action  = false
+     if(!(email.value.replaceAll(/\s/g,"").length > 0)){
+          checking_card(email)
+         action = false ;
+     }else if(!(pass.value.replaceAll(/\s/g,"").length > 3)){
+          checking_card(pass)
+          action = false ;
+     }else { 
+        action = true ;
+     }
+    
+     if(email.value.includes("@")){
+       email  = email.value.toLocaleLowerCase()   
+     } else { 
+        email  = email.value;  
+     }  
+       
+     
+    if(action == true) {
+     http2.get('/@ATTR_REQUEST@',{type:"login",email:email,pass:pass.value},"json")
+     .wait(function(){ 
+        card_wating_animate();    
+        self.style.display = "none"  
+    card_user.querySelector('.other_action').style.display = "none";
+       status_card("none");   
+     })                   
+    .done(function(data){                           
+        if(data.status == 200) { //ok
+          window.location.replace(r_url) 
+           
+        }     
+        else if(data.status == 300)  {   
+            alert(data.text) 
+             status_ok(self)
+        } else if(data.status == 400){ 
+           status_ok(self,data.text)
+              
+        }else if(data.status  == 500){
+             alert(data.text) 
+            status_ok(self) 
+        }
+    });           
+                          
+    }                
+               
+         } //end  click
+         
+    }else if(type == 'forgot'){
+        card_user.querySelectorAll(".forget").forEach(function(self){self.style.display = "block";});
+        card_user.querySelectorAll(".sinpup").forEach(function(self){self.style.display = "none";});
+          card_user.querySelector('[check="email"]').textContent = 'Email';
+           enable_disbled_eUCheking =  false;
+        card_minStaus(true)
+    }
+    
+    
+}
+ 
+ 
+ 
+ 
+ 
+ card_user.querySelector(".other_action").querySelectorAll('a')
+ .forEach(function(e){
+   e.onclick = function (){
+     type =   this.getAttribute('type')
+      mode_card(type,this.textContent+"<a href=''>?</a>")
+   } 
+ });
+
+
+
+
+
+
+
+
+  var hide_Pass=   all('.model .pass_show')
+
+
+     hide_Pass.forEach(function(a){
+         a.onclick = function (){
+             if(this.getAttribute('type')  == "hide"){
+                    this.style.display = "none" 
+                    ss('[attr="pass"]').setAttribute('type',"text")
+                   hide_Pass[1].style.display = "inline"
+             }else {
+                    hide_Pass[0].style.display = "inline"
+                     hide_Pass[1].style.display = "none"
+                      ss('[attr="pass"]').setAttribute('type',"password")
+             }
+         }
+     });
+   
+   for (input of  all(".card_user .model input")){
+       input.onfocus = function (){
+           this.style.cssText +="border-right:solid 1px gray;border-top:solid 1px gray"
+       }
+       
+      input.onblur = function (){
+           this.style.cssText +="border-right:none;border-top:none"
+       }
+   } 
+    
+    
+   
+   
+
+ 
+ 
+ 
+
+
+
+
+
+ 
+
+
+
+
+</script>
+
+
+  </body>
+</html>
+

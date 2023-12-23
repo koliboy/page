@@ -1,0 +1,15 @@
+ .theme_dark_text  {color:white;} 
+     .theme_dark_background{  
+         background:rgba(31, 31, 31, 1); 
+     }
+     .theme_dark_higlights {
+       background:rgba(0, 0, 0, 0.92);  
+     }
+.sef_svg_fill {
+    fill:rgba(0, 0, 0, 0.92);
+}
+
+input {
+   background: rgba(66, 66, 66, 0.28)
+}
+/*my baset color  rgba(255, 31, 244, 1)*/

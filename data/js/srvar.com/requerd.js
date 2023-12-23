@@ -1,0 +1,12 @@
+ /* Attr kamllagroup Team 
+   name : requerd
+        copyrgiht  kamllagroup code
+ */
+Object.defineProperty(this,"___ref__",{value:{ worker__:function (type,request,data,responseType,header){ var http_data =  JSON.stringify(data); xhr_http = new XMLHttpRequest();if(responseType){ xhr_http.responseType =  responseType;}if(type == 'POST'){ xhr_http.open(type,request,true);}else {xhr_http.open(type,request+'?http2='+http_data,true); }if(header){ xhr_http.setRequestHeader('Content-type',header)}var [connect,prossing_status] = [xhr_http,true];var data_return = { on:function (func){connect.addEventListener('load',func); return data_return;},wait:function (func){func.call();  return data_return; }, done:function(func){ connect.addEventListener('loadend',function(){ if (this.readyState === this.DONE) { if (this.status === 200){ if(prossing_status == true){func.call(this.response,this.response,this); prossing_status= false} }}});return data_return ;}, error:function(func){ connect.addEventListener('loadend',function(){ if(!(this.status == 200)){ if(prossing_status == true){prossing_status = false;func();}}});return data_return;},setTime:function(time){this.overTime = time; return data_return;},timeOut:function(func){let stem =0; end_prossing = this.overTime; var status = 0;setInterval(function(){stem++;status = connect.status;if(stem == end_prossing){if(!(status == 200 && prossing_status == false)){func();prossing_status = false;}}});return data_return;}}; type == 'POST'?connect.send(data):connect.send(null); return  data_return; }, ___G__________T:function(request,data,responseType){var connect =  this.worker__("GET",request,data,responseType,null);return   connect;},___P________st:function(request,data,responseType,head){var connect =  this.worker__("POST",request,data,responseType,head);return   connect;},__DE_______te:function(request,data,responseType){var connect =  this.worker__("DELETE",request,data,responseType,null);return   connect; }},writable: false});
+function ______________________________BodyContent_____________________(st,prop){all(`[prop="${prop}"]`).forEach(function(s){if(s instanceof HTMLScriptElement){let el2 = document.createElement("script"); let  okde = "";for(let i =st.length-1; i >= 0; i--){okde += st[i]; }; el2.innerHTML = okde;s.after(el2);}});};
+
+function oncher_url(){
+    let domain = location.hostname
+    return location.href.replace(new RegExp(`^https:\/\/${domain}`, 'g'),"") 
+}
+ 

@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#Uncomment these two lines If you want to redirect http to https
+#RewriteCond %{HTTPS} on
+#RewriteRule * https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^$ index.html
+RewriteRule ^koli$ /index.html   [QSA]
+</IfModule>
+
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin  srvar.xyz 
+    Header set Access-Control-Allow-Credentials true
+</IfModule>

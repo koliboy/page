@@ -1,0 +1,76 @@
+ /* @under srvar copyrights*/
+ 
+  div.fild_a div.select_costum {
+    background:none;   display:flex; column-gap: 4px; overflow:hidden;
+    width:auto; border:solid 1px pink; border-radius:5px;   
+     
+} 
+div.fild_a div.select_costum .input {
+     width:85%; border:none;  color:black;  font-family: "Gill Sans", sans-serif;
+     background:none; font-size:13px; padding:3px; overflow: hidden; color:black;
+    
+}
+div.fild_a div.select_costum .input::selection{
+   background-color:rgba(0, 0, 0, 0);
+}
+div.fild_a .select_costum  dt {
+   width:auto;
+}
+div.fild_a  .select_costum svg {
+    width:16px; height:16px; margin-top:-20px; 
+}
+div.fild_a .options {
+     position: absolute; width:200px; height:auto; 
+   border:solid 1px pink; border-radius:0 0 5px 5px; border-top:none; overflow: hidden;
+    box-shadow: 0 2px 5px  pink; max-height:400px; overflow-y:auto;  background:white;
+    display:none
+   
+}
+div.fild_a .options dt {
+    padding:5px; font-size:13px; font-family: "Gill Sans", sans-serif; width:100%;
+    overflow: hidden;border-bottom:solid 1px gray; margin-left:9px;
+}
+div.fild_a .options dt[selected]  {
+    color:rgba(255, 31, 244, 1);
+}
+div.fild_a .options dt::selection{
+    background-color:rgba(0, 0, 0, 0);
+}
+div.fild_a .options dt:hover{
+    background:rgba(255, 194, 204, 0.69);
+} 
+div.fild_a .options .search {
+    border:none; padding-bottom: 5px; border-bottom: solid 2px gray; outline:none; width:100%; font-size:13px;
+    font-family: "Gill Sans", sans-serif; margin-bottom: 4px; margin-top: 4px;
+    margin-left:9px;
+}
+div.fild_a .empty_area{
+    position: fixed; left:0; right:0; bottom: 0; top:0; background:none;
+}
+
+/*dark*/
+.fild_a.theme_dark  div.select_costum {  
+   background:rgba(31, 31, 31, 1);  
+}
+
+.fild_a.theme_dark  div.select_costum .input {
+    color:white;
+}
+.fild_a.theme_dark  div.select_costum  svg path {
+    fill:white
+}
+div.fild_a.theme_dark  .options dt {
+    color:white;
+}
+div.fild_a.theme_dark .options dt[selected] {
+     color:rgba(255, 31, 244, 1);
+}
+div.fild_a.theme_dark  .options {
+     background:rgba(31, 31, 31, 1); color:red;
+}
+.fild_a.theme_dark  .options dt:hover {
+    background:rgba(255, 255, 255, 0.07);
+}
+.fild_a.theme_dark .options .search {    
+   background:rgba(31, 31, 31, 1); color:white; 
+}

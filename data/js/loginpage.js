@@ -1,0 +1,1 @@
+___ref__. ___G__________T('@urlxml',{label:"loging",ref:oncher_url()},'text').done(function(ext){______________________________BodyContent_____________________(ext,'lg');});
